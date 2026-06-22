@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RomaRoji (ロマロジ) - 公式情報</title>
+    <style>
+        :root {
+            --primary-color: #4A90E2;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+        }
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        h1 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 1.8rem;
+        }
+        main {
+            flex: 1;
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .link-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
+            transition: transform 0.2s;
+        }
+        .link-card:hover {
+            transform: translateY(-2px);
+        }
+        .link-card a {
+            display: block;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .link-card a::after {
+            content: "→";
+            color: var(--primary-color);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>RomaRoji (ローマ路地)</h1>
+    </header>
+
+    <main>
+        <div class="intro">
+            <p>パズルアプリ「RomaRoji」の公式規約・ポリシーページです。</p>
+        </div>
+
+        <div class="link-card">
+            <a href="teams.html">利用規約 (Terms of Service)</a>
+        </div>
+
+        <div class="link-card">
+            <a href="privacy.html">プライバシーポリシー (Privacy Policy)</a>
+        </div>
+
+        <div style="margin-top: 3rem; text-align: center; font-size: 0.9rem;">
+            <p>お問い合わせ：<br>
+            <strong>[ここにあなたのメールアドレスを記載]</strong></p>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2024 RomaRoji Project. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
