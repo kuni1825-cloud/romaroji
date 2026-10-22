@@ -3,105 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RomaRoji (ロマロジ) - 公式情報</title>
+    <meta name="description" content="数字とローマ字が、解くためのヒント。ロマロジは隠れた言葉を見つける新感覚ロジックパズル。遊び方、週間ミッション、クリアブックをご紹介します。">
+    <title>RomaRoji（ロマロジ）- 新感覚ロジックパズル</title>
     <style>
         :root {
             --primary-color: #4A90E2;
             --text-color: #333;
             --bg-color: #f8f9fa;
         }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-            line-height: 1.6;
+            line-height: 1.8;
             color: var(--text-color);
             background-color: var(--bg-color);
             margin: 0;
-            padding: 0;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
         }
+
         header {
             background-color: white;
             padding: 2rem 1rem;
             text-align: center;
             border-bottom: 1px solid #ddd;
         }
+
         h1 {
             margin: 0;
             color: var(--primary-color);
             font-size: 1.8rem;
         }
+
         main {
             flex: 1;
-            max-width: 600px;
+            width: calc(100% - 2rem);
+            max-width: 800px;
             margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        .intro {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        .link-card {
+            padding: 2rem;
             background: white;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 1rem;
-            transition: transform 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow-wrap: anywhere;
         }
-        .link-card:hover {
-            transform: translateY(-2px);
-        }
-        .link-card a {
-            display: block;
-            padding: 1.5rem;
-            text-decoration: none;
-            color: var(--text-color);
-            font-weight: bold;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .link-card a::after {
-            content: "→";
+
+        h2 {
             color: var(--primary-color);
+            font-size: 1.25rem;
+            margin: 2.5rem 0 1rem;
+            padding-left: 12px;
+            border-left: 4px solid var(--primary-color);
         }
+
+        main > h2:first-child {
+            margin-top: 0;
+            padding-left: 0;
+            border-left: 0;
+            font-size: 1.5rem;
+        }
+
+        p,
+        li {
+            font-size: 0.95rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+        }
+
+        a {
+            color: #2468b7;
+            text-underline-offset: 3px;
+        }
+
+        a:focus-visible {
+            outline: 3px solid var(--primary-color);
+            outline-offset: 4px;
+        }
+
         footer {
             text-align: center;
             padding: 2rem 1rem;
             font-size: 0.9rem;
             color: #777;
         }
+
+        @media (max-width: 480px) {
+            main {
+                margin: 1rem auto;
+                padding: 1.5rem 1.25rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
     </style>
 </head>
 <body>
-
     <header>
-        <h1>RomaRoji (ロマロジ)</h1>
+        <h1>RomaRoji（ロマロジ）</h1>
     </header>
 
     <main>
-        <div class="intro">
-            <p>パズルアプリ「RomaRoji」の公式規約・ポリシーページです。</p>
-        </div>
+        <h2>数字とローマ字が、解くためのヒント。</h2>
+        <p><strong>ローマ字表を組み合わせて、隠れた言葉を見つけだそう。</strong></p>
+        <p>ロマロジは、数字のヒントとローマ字の組み合わせから答えを導く、新感覚ロジックパズルです。</p>
+        <p>「ここは黒マス？ それとも言葉の一文字？」</p>
+        <p>マス目をひとつずつ確かめていくと、ばらばらに見えたアルファベットが、意味のある言葉へと変わっていきます。答えがつながった瞬間の、すっきりするひらめきを楽しんでください。</p>
 
-        <div class="link-card">
-            <a href="teams.html">利用規約 (Terms of Service)</a>
-        </div>
+        <h2>操作はかんたん、マス目をタップ。</h2>
+        <ol>
+            <li><strong>数字を手がかりに、黒マスを考える。</strong> 盤面の行や列にある数字は、連続して黒く塗るマスの数を表します。</li>
+            <li><strong>言葉に使う文字を、赤文字にする。</strong> マス目をタップすると、未確定・黒マス・赤文字を切り替えられます。</li>
+            <li><strong>赤文字をローマ字として読み、答えを見つける。</strong> 各行の文字を組み合わせると、隠れていた言葉が見えてきます。</li>
+        </ol>
+        <p>数字から考えるか、ローマ字からひらめくか。ふたつの手がかりを行き来することが、ロマロジを解く楽しさです。</p>
 
-        <div class="link-card">
-            <a href="privacy.html">プライバシーポリシー (Privacy Policy)</a>
-        </div>
+        <h2>はじめてでも、チュートリアルから</h2>
+        <p>最初は実際にマス目をタップしながら、文字の選び方と数字の読み方を練習できます。プレイ中に確認できるローマ字表も用意しています。</p>
+        <p>ルールを覚えたら、まずは<strong>Vol.0の15問の初級問題</strong>へ。クリアを重ねながら、次の問題パックに挑戦していきましょう。通常問題は、Vol.0〜Vol.8に全175問を収録しています。</p>
 
-        <div style="margin-top: 3rem; text-align: center; font-size: 0.9rem;">
-            <p>お問い合わせ：<br>
-            <strong>kuni1825@gmail.com</strong></p>
-        </div>
+        <h2>言葉がわかると、イラストも楽しい</h2>
+        <p>正解すると、答えの言葉にちなんだイラストが登場します。</p>
+        <p>考えて、ひらめいて、絵でも楽しむ。ひとつの答えにたどり着くたびに、小さな達成感が待っています。</p>
+
+        <h2>週間ミッションで、もうひとつの謎解き</h2>
+        <p>日ごとのパズルをクリアして、ミッションの文字を集めましょう。</p>
+        <p>ばらばらの文字が、集めると問題文に？ 土曜日になったら、見えてきた手がかりをもとにミッションへ回答できます。正解してポイントを受け取り、日々の挑戦を楽しみましょう。</p>
+
+        <h2>クリアブックに、あなたの積み重ねを</h2>
+        <p>クリアした問題やスコア、プレイ時間、最近のクリア記録は、クリアブックで振り返れます。</p>
+        <p>昨日は解けなかった問題が、今日は解けるかもしれない。自分のペースで挑戦しながら、あなただけの記録を重ねていきましょう。</p>
+
+        <h2>こんなときに、ロマロジを</h2>
+        <ul>
+            <li>数字や言葉を使って、じっくり考えるパズルを楽しみたいとき</li>
+            <li>移動中や休憩時間に、ひとつの問題に集中したいとき</li>
+            <li>いつものパズルとは少し違う、ひらめきを味わいたいとき</li>
+        </ul>
+        <p><strong>楽勝か、ちょいムズか。ロマロジで、まったく新しいひらめき体験を。</strong></p>
+
+        <h2>アプリについて</h2>
+        <ul>
+            <li><strong>アプリ名：</strong>RomaRoji（ロマロジ）</li>
+            <li><strong>ジャンル：</strong>ローマ字ロジックパズル</li>
+            <li><strong>対応環境：</strong>iOS 17.0以降のiPhone</li>
+            <li><strong>アカウント登録：</strong>不要</li>
+        </ul>
+        <p>本アプリには広告が表示されます。一部のヒントや過去問の解放には、動画広告の視聴が必要です。利用状況の分析への同意は任意で、アプリ内の設定から変更できます。</p>
+
+        <h2>ご利用にあたって</h2>
+        <ul>
+            <li><a href="teams.html">利用規約（Terms of Service）</a></li>
+            <li><a href="privacy.html">プライバシーポリシー（Privacy Policy）</a></li>
+        </ul>
+
+        <h2>お問い合わせ</h2>
+        <p>操作や不具合、ご意見については、以下の窓口までご連絡ください。不具合のお問い合わせでは、端末の機種・iOSのバージョン・発生した画面や操作を添えていただくと、確認がスムーズです。</p>
+        <p>
+            <strong>RomaRojiプロジェクト</strong><br>
+            <a href="mailto:kuni1825@gmail.com">kuni1825@gmail.com</a>
+        </p>
     </main>
 
     <footer>
-        &copy; 2024 RomaRoji Project. All Rights Reserved.
+        &copy; 2024–2026 RomaRoji Project. All Rights Reserved.
     </footer>
-
 </body>
 </html>
